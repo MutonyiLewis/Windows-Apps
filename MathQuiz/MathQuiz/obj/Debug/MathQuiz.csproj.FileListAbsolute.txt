@@ -1,0 +1,10 @@
+D:\Users\lleewii\OneDrive\Desktop\self\Windows App\MathQuiz\MathQuiz\bin\Debug\MathQuiz.exe.config
+D:\Users\lleewii\OneDrive\Desktop\self\Windows App\MathQuiz\MathQuiz\bin\Debug\MathQuiz.exe
+D:\Users\lleewii\OneDrive\Desktop\self\Windows App\MathQuiz\MathQuiz\bin\Debug\MathQuiz.pdb
+D:\Users\lleewii\OneDrive\Desktop\self\Windows App\MathQuiz\MathQuiz\obj\Debug\MathQuiz.csproj.AssemblyReference.cache
+D:\Users\lleewii\OneDrive\Desktop\self\Windows App\MathQuiz\MathQuiz\obj\Debug\MathQuiz.Form1.resources
+D:\Users\lleewii\OneDrive\Desktop\self\Windows App\MathQuiz\MathQuiz\obj\Debug\MathQuiz.Properties.Resources.resources
+D:\Users\lleewii\OneDrive\Desktop\self\Windows App\MathQuiz\MathQuiz\obj\Debug\MathQuiz.csproj.GenerateResource.cache
+D:\Users\lleewii\OneDrive\Desktop\self\Windows App\MathQuiz\MathQuiz\obj\Debug\MathQuiz.csproj.CoreCompileInputs.cache
+D:\Users\lleewii\OneDrive\Desktop\self\Windows App\MathQuiz\MathQuiz\obj\Debug\MathQuiz.exe
+D:\Users\lleewii\OneDrive\Desktop\self\Windows App\MathQuiz\MathQuiz\obj\Debug\MathQuiz.pdb
