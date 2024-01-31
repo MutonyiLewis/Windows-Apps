@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.timeLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.plusLeftLabel = new System.Windows.Forms.Label();
@@ -51,6 +52,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.dividendLeftLabel = new System.Windows.Forms.Label();
             this.startButton = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.sum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.difference)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.product)).BeginInit();
@@ -63,7 +65,7 @@
             this.timeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timeLabel.Location = new System.Drawing.Point(316, 9);
             this.timeLabel.Name = "timeLabel";
-            this.timeLabel.Size = new System.Drawing.Size(200, 30);
+            this.timeLabel.Size = new System.Drawing.Size(200, 46);
             this.timeLabel.TabIndex = 0;
             this.timeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -124,6 +126,9 @@
             this.sum.Name = "sum";
             this.sum.Size = new System.Drawing.Size(100, 48);
             this.sum.TabIndex = 1;
+            this.sum.ValueChanged += new System.EventHandler(this.sum_ValueChanged);
+            this.sum.Click += new System.EventHandler(this.answer_Enter);
+            this.sum.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // difference
             // 
@@ -132,6 +137,9 @@
             this.difference.Name = "difference";
             this.difference.Size = new System.Drawing.Size(100, 48);
             this.difference.TabIndex = 2;
+            this.difference.ValueChanged += new System.EventHandler(this.difference_ValueChanged);
+            this.difference.Click += new System.EventHandler(this.answer_Enter);
+            this.difference.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // minusRightLabel
             // 
@@ -180,6 +188,9 @@
             this.product.Name = "product";
             this.product.Size = new System.Drawing.Size(100, 48);
             this.product.TabIndex = 3;
+            this.product.ValueChanged += new System.EventHandler(this.product_ValueChanged);
+            this.product.Click += new System.EventHandler(this.answer_Enter);
+            this.product.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // timesRightLabel
             // 
@@ -228,6 +239,9 @@
             this.quotient.Name = "quotient";
             this.quotient.Size = new System.Drawing.Size(100, 48);
             this.quotient.TabIndex = 4;
+            this.quotient.ValueChanged += new System.EventHandler(this.dividend_ValueChanged);
+            this.quotient.Click += new System.EventHandler(this.answer_Enter);
+            this.quotient.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // dividendRightLabel
             // 
@@ -271,7 +285,6 @@
             // 
             // startButton
             // 
-            this.startButton.AutoEllipsis = true;
             this.startButton.AutoSize = true;
             this.startButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startButton.Location = new System.Drawing.Point(389, 290);
@@ -281,6 +294,11 @@
             this.startButton.Text = "Start Quiz";
             this.startButton.UseVisualStyleBackColor = true;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -349,6 +367,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label dividendLeftLabel;
         private System.Windows.Forms.Button startButton;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
